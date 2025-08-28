@@ -37,6 +37,10 @@ $breakpoints: (
   justify-content: space-between; /* 両端配置 */
   padding: 22px 15px; /* 左右に余白つけるとバランス良い */
   @include mq(pc) {
+   max-width: calc(1140px + 15px * 2);
+   margin-left: auto;
+   margin-right: auto;
+
   }
 }
 
@@ -51,7 +55,9 @@ $breakpoints: (
 .header_nav {
   display: none; /* SPでは非表示、PCで表示させたいならメディアクエリで切り替え */
   @include mq(pc) {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 40px;
   
 
   }
@@ -62,10 +68,21 @@ font-style: Bold;
 font-size: 16px;
 line-height: 170%;
 letter-spacing: 3%;
+font-weight: bold;
+color: #111;
 
 
 }
-
+.header_button{
+   
+    border-radius: 60px;
+    border: solid 1px #111;
+    color: #111;
+    padding: 10px 30px ;
+    background: #ffff;
+    font-weight: bold;
+    
+}
 .drawer_icon {
     position: relative;
   width: 36px;
