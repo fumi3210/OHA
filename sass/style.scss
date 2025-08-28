@@ -21,24 +21,77 @@ $breakpoints: (
 .inner{
 
 }
-// header
-.header{
-
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  @include mq(pc) {
+  }
 }
-.hader_inner{
 
+.header_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 両端配置 */
+  padding: 22px 15px; /* 左右に余白つけるとバランス良い */
+  @include mq(pc) {
+  }
 }
-.header_logo{
-    img{
 
-    }
+.header_logo img {
+  width: 100px;
+  display: block;
+  @include mq(pc) {
+    width: 135px;
+  }
 }
-.header_nav{
 
+.header_nav {
+  display: none; /* SPでは非表示、PCで表示させたいならメディアクエリで切り替え */
+  @include mq(pc) {
+    display: block;
+  
+
+  }
 }
 .header_link{
+font-weight: 700;
+font-style: Bold;
+font-size: 16px;
+line-height: 170%;
+letter-spacing: 3%;
+
 
 }
-.header_button{
+
+.drawer_icon {
+    position: relative;
+  width: 36px;
+  height: 21px;
+  @include mq(pc) {
+    display: none;
+  }
+}
+
+.drawer_icon-bar {
+position: absolute;
+ top: 0;
+ left: 0;
+  width: 36px;
+  height: 3px;
+  background: #111;
+  &:nth-of-type(1){
+    top: 0;
     
+  }
+  &:nth-of-type(2){
+    top: 8px;
+
+  }
+  &:nth-of-type(3){
+    top: 16px;
+
+  }
 }
