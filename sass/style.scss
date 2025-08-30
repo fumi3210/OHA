@@ -29,13 +29,16 @@ $breakpoints: (
 
 .header_inner {
   display: flex;
+  border-radius: 30px;
   align-items: center;
   justify-content: space-between; /* 両端配置 */
   padding: 22px 15px; /* 左右に余白つけるとバランス良い */
-  @include mq(pc) {
-   max-width: calc(1140px + 15px * 2);
+  max-width: calc(1140px + 15px * 2);
    margin-left: auto;
    margin-right: auto;
+  @include mq(pc) {
+    max-width: calc(1040px + 15px * 2);
+   
 
   }
 }
@@ -110,72 +113,68 @@ position: absolute;
 }
 // mv
 .mv{
-background: linear-gradient(#F8B819,#EFD320);
-border-radius: 20px;
-padding: 50px  56px  255px ;
-@include mq(pc) {
-}
-}
-.mv_inner{
-    position: relative;
-    max-width: calc(100% - 12px * 2);
+    border-radius: 20px ;
+    max-width: calc(100% - 15px * 2);
     margin-left: auto;
     margin-right: auto;
+    background: linear-gradient( #F0D320, #F8B819);
     @include mq(pc) {
+        
     }
 
 }
+.mv_inner{
+    padding: 50px 20px  255px ;
+position: relative;
+@include mq(pc) {
+    padding-top: 110px;
+    padding-bottom: 109px;
+      max-width: calc(1040px + 30px * 2);
+        margin-left: auto;
+        margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+}
 .mv_contens{
-    text-align: center;
-    @include mq(pc) {
-    }
+    
 
 }
 .mv_lead{
 
 }
-.mv_lead-1{
-    display:block;
-    font-family: Noto Sans JP;
+.mv_lead-1,
+.mv_lead-2{
+    display: block;
+    border-radius: 5px;
+    padding: 10px ;
+    margin-left: auto;
+    margin-right: auto;
+font-feature-settings: 'pal' on;
+width: fit-content;
+font-family: Noto Sans JP;
 font-weight: 700;
 font-style: Bold;
 font-size: 22px;
-line-height: 100%;
-letter-spacing: 10%;
-font-feature-settings: "palt" on;
-    width: fit-content;
-    background: #fafafa;
-    padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
-    border-radius: 5px;
-    @include mq(pc) {
-    }
-    
+line-height: 1;
+letter-spacing: 2.2px;
+background: #fafafa;
+@include mq(pc) {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 12px 16px;
+}
+
+
 }
 .mv_lead-2{
-font-feature-settings: "palt" on;
-display:block;
-padding: 10px ;
-font-weight: 700;
-font-style: Bold;
-font-size: 22px;
-line-height: 100%;
-letter-spacing: 10%;
-padding: 10px;
-margin-top: 8px;
-width: fit-content;
-background: #fafafa;
-margin-left: auto;
-margin-right: auto;
-border-radius: 5px;
-@include mq(pc) {
-}
+    margin-top: 8px;
 
 }
 .mv_text{
-margin-top: 26px;
-font-family: Noto Sans JP;
+    margin-top: 26px;
+    font-family: Noto Sans JP;
 font-weight: 700;
 font-style: Bold;
 font-size: 16px;
@@ -183,50 +182,47 @@ line-height: 170%;
 letter-spacing: 3%;
 text-align: center;
 @include mq(pc) {
+    text-align: left;
+    margin-top: 20px;
 }
 
 
 }
 .mv_button{
-margin-top: 22px;
+    text-align: center;
+    margin-top: 22px;
+    @include mq(pc) {
+        text-align: left;
+        margin-top: 30px;
+    }
     a{
-display: inline-block;
-background: #111;
-color: #ffff;
-font-family: Noto Sans JP;
-text-align: center;
-padding: 10px 30px ;
-font-weight: 700;
-font-style: Bold;
-font-size: 16px;
-line-height: 170%;
-letter-spacing: 3%;
-text-align: center;
-vertical-align: middle;
-border-radius: 60px;
-@include mq(pc) {
-}
-
-
+        display: inline-block;
+        color: #ffff;
+        background: #111;
+        text-align: center;
+        border-radius:60px  ;
+        padding: 10px 30px ;
 
     }
 }
 .mv_img{
-    text-align: center;
-    margin-top: 30px;
     position: absolute;
     width: 100%;
     left: 0;
     bottom: -108px;
+    text-align: center;
     @include mq(pc) {
+        bottom: -120px;
+        text-align: right;
     }
-   
-
     img{
+        
         width: 345px;
-        display: block;
         @include mq(pc) {
+            width: 600px;
         }
+
 
     }
 }
+
