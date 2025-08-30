@@ -261,3 +261,30 @@
   width: 140px;
   display: block;
 }
+
+.News {
+  padding: 60px 0;
+}
+
+.News_head {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  text-align: center;
+  line-height: 100%;
+  letter-spacing: 10%;
+}
+
+.News_list {
+  margin-top: 38px;
+}
+
+.News_link {
+  display: flex;
+}
+
+.News_meta {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
