@@ -461,29 +461,115 @@ padding-bottom:calc(10px - 2px ) ;
 }
 // About
 .About{
+    overflow: hidden;
+    padding: 60px 0 60px ;
+    @include mq(pc) {
+        padding: 50px 0 50px ;
+    }
+
+    
+   
 
 }
 .About_inner {
 
 }
 .About_logo{
+    text-align: center;
+  
     img{
+        width: 180px;
+        @include mq(pc) {
+            width: 230px;
+        }
 
     }
 }
 .About_contens{
+    text-align: center;
+    margin-top: 150px;
+    position: relative;
+      padding-top: 288px;
+      
+      &::before{
+        position: absolute;
+        width: 1100px;
+        height: 1100px;
+        border-radius: 50%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+       background: linear-gradient( #F0D320, #F8B819);
+            z-index: -1;
+            content: "";
+            @include mq(pc) {
+                width: 800px;
+                height: 800px;
+            }
+      }
+    
 
 }
 .About_img{
+    
+  
+    position: absolute;
+    text-align: center;
+    top: -110px;
+    left: 0;
+    width: 100%;
+    @include mq(pc) {
+    }
+
     img{
+        width: 320px;
+        @include mq(pc) {
+            width: 330px;
+        }
 
     }
 }
 .About_contens-text{
+    font-family: Noto Sans JP;
+font-weight: 700;
+font-style: Bold;
+font-size: 16px;
+line-height: 2;
+letter-spacing: 0%;
+text-align: center;
+@include mq(pc) {
+    margin-top: 40px;
+}
+
+    
+
+}
+.About_contens-sub-text{
+font-family: Noto Sans JP;
+font-weight: 700;
+font-style: Bold;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 8%;
+text-align: center;
+color: #111111;
+@include mq(pc) {
+}
+
+
+   
+
 
 }
 .About_button{
+    margin-top: 12px;
     a{
-        
+        display: inline-block;
+        background: #fafafa;
+        border: solid 1px #111;
+        border-radius: 60px;
+        padding: 10px 30px ;
+        color: #111111;
+
     }
 }
