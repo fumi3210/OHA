@@ -18,13 +18,24 @@ $breakpoints: (
     @content;
   }
 }
+.is-pc{
+    @include mq(pc) {
+    display: none;
+  }
+
+}
+.is-sp{
+    @include mq(sp) {
+    display: none;
+  }
+
+}
 .inner{
 
 }
 .header {
  
-  @include mq(pc) {
-  }
+  
 }
 
 .header_inner {
@@ -490,6 +501,11 @@ padding-bottom:calc(10px - 2px ) ;
     margin-top: 150px;
     position: relative;
       padding-top: 288px;
+      @include mq(pc) {
+                 margin-top: 176px;
+                 padding-top: 264px;
+                 padding-bottom: 100px;
+            }
       
       &::before{
         position: absolute;
@@ -506,6 +522,8 @@ padding-bottom:calc(10px - 2px ) ;
                 width: 800px;
                 height: 800px;
             }
+            
+           
       }
     
 
@@ -519,6 +537,7 @@ padding-bottom:calc(10px - 2px ) ;
     left: 0;
     width: 100%;
     @include mq(pc) {
+        top: -126px;
     }
 
     img{
@@ -553,7 +572,9 @@ line-height: 100%;
 letter-spacing: 8%;
 text-align: center;
 color: #111111;
+margin-top: 40px;
 @include mq(pc) {
+    margin-top: 42px;
 }
 
 
