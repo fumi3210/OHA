@@ -596,6 +596,7 @@ margin-top: 40px;
     width: 100%;
     padding: 60px 0 60px ;
     @include mq(pc) {
+        padding: 100px 0 100px ;
     }
 
 
@@ -614,6 +615,16 @@ font-style: Bold;
 font-size: 38px;;
 line-height: 100%;
 letter-spacing: 10%;
+@include mq(pc) {
+    font-family: Montserrat;
+font-weight: 700;
+font-style: Bold;
+font-size: 50px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 10%;
+
+}
 
 
 }
@@ -624,6 +635,15 @@ line-height: 100%;
 letter-spacing: 8%;
 text-align: center;
 margin-top: 14px;
+@include mq(pc) {
+    width: 229;
+height: 16;
+top: 164px;
+left: 605px;
+angle: 0 deg;
+opacity: 1;
+
+}
 
 
 }
@@ -634,6 +654,10 @@ margin-top: 14px;
         width: 345px;
         height: auto;
         aspect-ratio: 345/194;
+        @include mq(pc) {
+            width: 640px;
+             aspect-ratio: 640/360;
+        }
 
     }
 }

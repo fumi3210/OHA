@@ -563,6 +563,12 @@
   width: 100%;
   padding: 60px 0 60px;
 }
+@media screen and (min-width: 768px) {
+  .Movie {
+    padding: 100px 0 100px;
+  }
+}
+
 .Movie_heading {
   text-align: center;
 }
@@ -575,6 +581,17 @@
   line-height: 100%;
   letter-spacing: 10%;
 }
+@media screen and (min-width: 768px) {
+  .Movie_head {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 50px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 10%;
+  }
+}
 
 .Movie_text {
   font-weight: 400;
@@ -583,6 +600,16 @@
   letter-spacing: 8%;
   text-align: center;
   margin-top: 14px;
+}
+@media screen and (min-width: 768px) {
+  .Movie_text {
+    width: 229;
+    height: 16;
+    top: 164px;
+    left: 605px;
+    angle: 0 deg;
+    opacity: 1;
+  }
 }
 
 .Movie_contens {
@@ -593,4 +620,10 @@
   width: 345px;
   height: auto;
   aspect-ratio: 345/194;
+}
+@media screen and (min-width: 768px) {
+  .Movie_contens iframe {
+    width: 640px;
+    aspect-ratio: 640/360;
+  }
 }
