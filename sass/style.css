@@ -625,4 +625,44 @@
     width: 640px;
     aspect-ratio: 640/360;
   }
+}
+
+.cta_inner {
+  padding: 50px 0 50px;
+  background: linear-gradient(#F8BD1E, #F0D320);
+}
+@media screen and (min-width: 768px) {
+  .cta_inner {
+    padding: 60px 0 60px;
+  }
+}
+
+.cta_contens {
+  text-align: center;
+}
+
+.cta_contens-text {
+  font-family: Noto Sans JP;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 200%;
+  letter-spacing: 3%;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .cta_contens-text {
+    font-size: 18px;
+  }
+}
+
+.cta_button {
+  margin-top: 16px;
+}
+.cta_button a {
+  display: inline-block;
+  background: #FFFFFF;
+  border: solid 1px #111;
+  padding: 10px 30px;
+  border-radius: 60px;
 }/*# sourceMappingURL=style.css.map */
