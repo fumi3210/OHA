@@ -557,3 +557,40 @@
   padding: 10px 30px;
   color: #111111;
 }
+
+.Movie {
+  background: url(../img/bg\ \(5\).png) repeat top left/529px auto;
+  width: 100%;
+  padding: 60px 0 60px;
+}
+.Movie_heading {
+  text-align: center;
+}
+
+.Movie_head {
+  margin-top: 60px;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 38px;
+  line-height: 100%;
+  letter-spacing: 10%;
+}
+
+.Movie_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 8%;
+  text-align: center;
+  margin-top: 14px;
+}
+
+.Movie_contens {
+  text-align: center;
+  margin-top: 32px;
+}
+.Movie_contens iframe {
+  width: 345px;
+  height: auto;
+  aspect-ratio: 345/194;
+}

@@ -576,11 +576,6 @@ margin-top: 40px;
 @include mq(pc) {
     margin-top: 42px;
 }
-
-
-   
-
-
 }
 .About_button{
     margin-top: 12px;
@@ -594,3 +589,52 @@ margin-top: 40px;
 
     }
 }
+// Movie
+.Movie{
+   background: url(../img/bg\ \(5\).png) repeat top left / 529px auto;
+
+    width: 100%;
+    padding: 60px 0 60px ;
+    @include mq(pc) {
+    }
+
+
+}
+.Movie_inner{
+
+}
+.Movie_heading{
+    text-align: center;
+
+}
+.Movie_head{
+margin-top: 60px;
+font-weight: 700;
+font-style: Bold;
+font-size: 38px;;
+line-height: 100%;
+letter-spacing: 10%;
+
+
+}
+.Movie_text{
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 8%;
+text-align: center;
+margin-top: 14px;
+
+
+}
+.Movie_contens{
+    text-align: center;
+    margin-top:  32px;
+    iframe{
+        width: 345px;
+        height: auto;
+        aspect-ratio: 345/194;
+
+    }
+}
+
