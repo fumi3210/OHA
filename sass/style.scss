@@ -662,7 +662,156 @@ opacity: 1;
     }
 }
 // How to use
+.How_to-use{
+    padding: 60px 0 60px ;
 
+}
+.How_to-use-inne{
+
+}
+.How_to-use_heading{
+    text-align: center;
+
+}
+.How_to-use_head{
+font-family: Montserrat;
+font-weight: 700;
+font-style: Bold;
+font-size: 38px;
+line-height: 100%;
+letter-spacing: 10%;
+
+
+}
+.How_to-use_text{
+margin-top: 14px;
+font-family: Montserrat;
+font-weight: 400;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 8%;
+text-align: center;
+
+
+}
+.How_to-use-boxes{
+    margin-top: 104px;
+     display: flex;
+    flex-direction: column;
+    gap: 112px;
+    
+    
+
+
+}
+.How_to-use-box{
+    padding: 54px 40px 48px;
+    background: #FFFBF0;
+    border-radius: 30px;
+    
+
+}
+.How_to-box-title{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    img{
+        width: 85px;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        bottom: calc(100% + 16px);
+        
+    }
+
+    
+   
+
+}
+.How_to-step{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+}
+.ste_box{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 46px;
+      position: relative;
+      display: flex;
+    flex-direction: column;
+  gap: 6px;
+  align-items: center;
+
+}
+.step_box-title{
+     position: absolute;
+    content: "";
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 25px;
+text-align: center;
+border-radius: 45px;
+width: 90px;
+height: 90px;
+background: #E4780C;
+ 
+   
+     
+
+}
+.step_box-head{
+    font-family: Montserrat;
+font-weight: 700;
+font-style: Bold;
+font-size: 13px;
+color: #111;
+line-height: 100%;
+letter-spacing: 10%;
+
+   
+
+}
+.step_box-number{
+    font-family: Montserrat;
+font-weight: 700;
+font-style: Bold;
+font-size: 34px;
+color: #ffff;
+line-height: 100%;
+letter-spacing: 10%;
+
+
+}
+.step_box-body{
+    text-align: center;
+    border: solid 3px #111;
+    border-radius: 30px;
+    padding: 20px  40px ;
+    background: #ffff;
+    width: 265px;
+}
+.step_box-img{
+    margin-top: 10px;
+    img{
+        width: 160px;
+
+    }
+}
+.step_box-body-text{
+margin-top: 10px;
+font-weight: 700;
+font-style: Bold;
+font-size: 13px;
+line-height: 170%;
+letter-spacing: 3%;
+text-align: center;
+
+
+}
 // cta
 .cta{
 
