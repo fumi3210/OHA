@@ -664,9 +664,16 @@ opacity: 1;
 // How to use
 .How_to-use{
     padding: 60px 0 60px ;
+    @include mq(pc) {
+    }
 
 }
-.How_to-use-inne{
+.How_to-use-inner{
+    @include mq(pc) {
+        max-width: calc(1140px + 30px * 2);
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 }
 .How_to-use_heading{
@@ -680,6 +687,8 @@ font-style: Bold;
 font-size: 38px;
 line-height: 100%;
 letter-spacing: 10%;
+@include mq(pc) {
+}
 
 
 }
@@ -691,6 +700,8 @@ font-size: 14px;
 line-height: 100%;
 letter-spacing: 8%;
 text-align: center;
+@include mq(pc) {
+}
 
 
 }
@@ -699,6 +710,10 @@ text-align: center;
      display: flex;
     flex-direction: column;
     gap: 112px;
+    @include mq(pc) {
+          
+        
+    }
     
     
 
@@ -708,6 +723,11 @@ text-align: center;
     padding: 54px 40px 48px;
     background: #FFFBF0;
     border-radius: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    @include mq(pc) {
+        
+    }
     
 
 }
@@ -729,10 +749,20 @@ text-align: center;
    
 
 }
-.How_to-step{
+.How_to-steps{
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    @include mq(pc) {
+        flex-direction: row;
+    }
+}
+
+.How_to-step{
+    
+
+    
    
 }
 .ste_box{
@@ -748,16 +778,24 @@ text-align: center;
 }
 .step_box-title{
      position: absolute;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
     content: "";
     top: -50px;
     left: 50%;
     transform: translateX(-50%);
     padding: 20px 25px;
 text-align: center;
-border-radius: 45px;
+border-radius:  50%;
 width: 90px;
 height: 90px;
 background: #E4780C;
+
+
+&.is_How-yellow{
+    background:#FABE00 ;
+}
  
    
      
@@ -767,7 +805,7 @@ background: #E4780C;
     font-family: Montserrat;
 font-weight: 700;
 font-style: Bold;
-font-size: 13px;
+font-size: 15px;
 color: #111;
 line-height: 100%;
 letter-spacing: 10%;
@@ -793,6 +831,7 @@ letter-spacing: 10%;
     padding: 20px  40px ;
     background: #ffff;
     width: 265px;
+    padding: 50px 20px 26px;
 }
 .step_box-img{
     margin-top: 10px;
