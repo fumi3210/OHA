@@ -652,6 +652,7 @@ opacity: 1;
     margin-top:  32px;
     iframe{
         width: 345px;
+        max-width: 100%;
         height: auto;
         aspect-ratio: 345/194;
         @include mq(pc) {
@@ -665,6 +666,7 @@ opacity: 1;
 .How_to-use{
     padding: 60px 0 60px ;
     @include mq(pc) {
+        padding: 100px 0 100px ;
     }
 
 }
@@ -701,6 +703,16 @@ line-height: 100%;
 letter-spacing: 8%;
 text-align: center;
 @include mq(pc) {
+font-family: Montserrat;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 8%;
+text-align: center;
+
+
 }
 
 
@@ -711,6 +723,8 @@ text-align: center;
     flex-direction: column;
     gap: 112px;
     @include mq(pc) {
+        margin-top: 89px;
+        gap: 75px;
           
         
     }
@@ -726,6 +740,8 @@ text-align: center;
     margin-left: 20px;
     margin-right: 20px;
     @include mq(pc) {
+        padding: 44px 10px 56px ;
+        border-radius:  40px;
         
     }
     
@@ -736,19 +752,36 @@ text-align: center;
     font-size: 18px;
     font-weight: 700;
     position: relative;
+    @include mq(pc) {
+        font-size: 22px;
+          padding-right: 95px;
+          width: fit-content;
+          margin-left: auto;
+          margin-right: auto;
+
+    }
     img{
         width: 85px;
         position: absolute;
         right: 50%;
         transform: translateX(50%);
         bottom: calc(100% + 16px);
+        @include mq(pc) {
+            right: 0;
+               transform: translateX(0);
+                    bottom: 0;
+          
+
+        }
+       
+    }
         
     }
 
     
    
 
-}
+
 .How_to-steps{
     margin-top: 20px;
     display: flex;
@@ -756,10 +789,17 @@ text-align: center;
     gap: 20px;
     @include mq(pc) {
         flex-direction: row;
+        gap: 24px;
+        max-width: 948px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 .How_to-step{
+    @include mq(pc) {
+    flex: 1;
+    }
     
 
     
@@ -831,12 +871,15 @@ letter-spacing: 10%;
     padding: 20px  40px ;
     background: #ffff;
     width: 265px;
-    padding: 50px 20px 26px;
+    padding: 50px 10px 26px;
 }
 .step_box-img{
     margin-top: 10px;
     img{
         width: 160px;
+        @include mq(pc) {
+            width: 200px;
+        }
 
     }
 }
@@ -848,6 +891,17 @@ font-size: 13px;
 line-height: 170%;
 letter-spacing: 3%;
 text-align: center;
+@include mq(pc) {
+    font-family: Noto Sans JP;
+font-weight: 700;
+font-style: Bold;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 170%;
+letter-spacing: 3%;
+text-align: center;
+
+}
 
 
 }

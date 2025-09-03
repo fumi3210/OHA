@@ -618,6 +618,7 @@
 }
 .Movie_contens iframe {
   width: 345px;
+  max-width: 100%;
   height: auto;
   aspect-ratio: 345/194;
 }
@@ -631,6 +632,12 @@
 .How_to-use {
   padding: 60px 0 60px;
 }
+@media screen and (min-width: 768px) {
+  .How_to-use {
+    padding: 100px 0 100px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .How_to-use-inner {
     max-width: 1200px;
@@ -660,12 +667,32 @@
   letter-spacing: 8%;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .How_to-use_text {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 8%;
+    text-align: center;
+  }
+}
+
 .How_to-use-boxes {
   margin-top: 104px;
   display: flex;
   flex-direction: column;
   gap: 112px;
 }
+@media screen and (min-width: 768px) {
+  .How_to-use-boxes {
+    margin-top: 89px;
+    gap: 75px;
+  }
+}
+
 .How_to-use-box {
   padding: 54px 40px 48px;
   background: #FFFBF0;
@@ -673,11 +700,29 @@
   margin-left: 20px;
   margin-right: 20px;
 }
+@media screen and (min-width: 768px) {
+  .How_to-use-box {
+    padding: 44px 10px 56px;
+    border-radius: 40px;
+  }
+}
+
 .How_to-box-title {
   text-align: center;
   font-size: 18px;
   font-weight: 700;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .How_to-box-title {
+    font-size: 22px;
+    padding-right: 95px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .How_to-box-title img {
   width: 85px;
@@ -685,6 +730,13 @@
   right: 50%;
   transform: translateX(50%);
   bottom: calc(100% + 16px);
+}
+@media screen and (min-width: 768px) {
+  .How_to-box-title img {
+    right: 0;
+    transform: translateX(0);
+    bottom: 0;
+  }
 }
 
 .How_to-steps {
@@ -696,6 +748,16 @@
 @media screen and (min-width: 768px) {
   .How_to-steps {
     flex-direction: row;
+    gap: 24px;
+    max-width: 948px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .How_to-step {
+    flex: 1;
   }
 }
 
@@ -757,7 +819,7 @@
   padding: 20px 40px;
   background: white;
   width: 265px;
-  padding: 50px 20px 26px;
+  padding: 50px 10px 26px;
 }
 
 .step_box-img {
@@ -765,6 +827,11 @@
 }
 .step_box-img img {
   width: 160px;
+}
+@media screen and (min-width: 768px) {
+  .step_box-img img {
+    width: 200px;
+  }
 }
 
 .step_box-body-text {
@@ -775,6 +842,18 @@
   line-height: 170%;
   letter-spacing: 3%;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .step_box-body-text {
+    font-family: Noto Sans JP;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 170%;
+    letter-spacing: 3%;
+    text-align: center;
+  }
 }
 
 .cta_inner {
