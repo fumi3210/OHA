@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  background: #FAFAFA;
+}
+
 @media screen and (min-width: 768px) {
   .is-pc {
     display: none;
@@ -854,6 +858,195 @@
     letter-spacing: 3%;
     text-align: center;
   }
+}
+
+.Merit {
+  padding: 60px 0 60px;
+}
+@media screen and (min-width: 768px) {
+  .Merit {
+    padding: 100px 0 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Merit_inner {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.Merit_heading {
+  text-align: center;
+}
+
+.Merit_head {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 38px;
+  line-height: 100%;
+  letter-spacing: 10%;
+}
+
+.Merit_text {
+  margin-top: 16px;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 8%;
+  text-align: center;
+}
+
+.Merit_boxes {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .Merit_boxes {
+    margin-top: 60px;
+    gap: 40px;
+  }
+}
+
+.Merit-box {
+  border-radius: 30px;
+  padding: 10px 20px 24px;
+}
+@media screen and (min-width: 768px) {
+  .Merit-box {
+    padding: 20px 110px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+  }
+  .Merit-box.is-reserve {
+    flex-direction: row-reverse;
+  }
+}
+
+.Merit_box-img {
+  text-align: center;
+}
+.Merit_box-img img {
+  width: 200px;
+}
+@media screen and (min-width: 768px) {
+  .Merit_box-img img {
+    width: 38.0434782609%;
+  }
+}
+
+.Merit_box-body-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+}
+@media screen and (min-width: 768px) {
+  .Merit_box-body-head {
+    gap: 28px;
+  }
+}
+
+.Merit_box-body {
+  margin-top: 18px;
+}
+@media screen and (min-width: 768px) {
+  .Merit_box-body {
+    width: 56.5217391304%;
+  }
+}
+
+.Merit_box-number {
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 1;
+  color: #FABE00;
+}
+
+.Merit_box-text {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 170%;
+  letter-spacing: 10%;
+}
+
+.Merit_box-body-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 2;
+  margin-top: 16px;
+}
+@media screen and (min-width: 768px) {
+  .Merit_box-body-text {
+    margin-top: 16px;
+  }
+}
+
+.price {
+  padding: 60px 0 60px;
+}
+
+.price_head {
+  text-align: center;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.price_contens {
+  margin-top: 42px;
+  overflow-x: auto;
+}
+
+.price_table {
+  width: 620px;
+  text-align: center;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.price_table th, .price_table td {
+  height: 60px;
+  vertical-align: middle;
+}
+.price_table th:nth-child(1), .price_table td:nth-child(1) {
+  width: 130px;
+}
+.price_table th:nth-child(2), .price_table td:nth-child(2) {
+  width: 90px;
+  background: #FFF9E5;
+}
+
+th {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 10%;
+  text-align: center;
+}
+th img {
+  width: 70px;
+}
+
+td {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 3%;
+}
+
+tbody tr {
+  border-top: solid 1px #111;
 }
 
 .cta_inner {

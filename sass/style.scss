@@ -1,3 +1,6 @@
+body{
+    background:#FAFAFA ;
+}
 $font-jp: 'Noto Sans JP', sans-serif;
 $font-en: 'Montserrat', sans-serif;
 $font-size-base: 16px;
@@ -905,6 +908,231 @@ text-align: center;
 
 
 }
+// Merit
+.Merit{
+    padding: 60px 0 60px ;
+    @include mq(pc) {
+        padding: 100px 0 100px ;
+    }
+    
+
+}
+.Merit_inner{
+    @include mq(pc) {
+        max-width: calc(1140px + 30px * 2);
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+}
+.Merit_heading{
+    text-align: center;
+
+}
+.Merit_head{
+font-weight: 700;
+font-style: Bold;
+font-size: 38px;
+line-height: 100%;
+letter-spacing: 10%;
+
+
+}
+.Merit_text{
+margin-top: 16px;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 8%;
+text-align: center;
+
+
+}
+// 上下のgap
+.Merit_boxes{
+    margin-top: 30px;
+display: flex;
+flex-direction: column;
+gap: 30px;
+@include mq(pc) {
+    margin-top: 60px;
+    gap: 40px;
+    
+}
+   
+
+}
+.Merit_box{
+    
+
+    
+
+
+}
+// 横並び
+.Merit-box{
+border-radius: 30px;
+padding: 10px 20px 24px ;
+@include mq(pc) {
+        padding: 20px 110px ;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        align-items: center;
+        &.is-reserve{
+            flex-direction: row-reverse;
+
+        }
+        
+    }
+
+     
+}
+.Merit_box-img{
+    text-align: center;
+    
+    img{
+        width: 200px;
+        @include mq(pc) {
+           width: calc(350 / 920 * 100%);
+        }
+
+    }
+}
+.Merit_box-body-head{
+display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+    @include mq(pc) {
+        gap: 28px;
+    }
+
+}
+.Merit_box-body{
+    margin-top: 18px;
+    @include mq(pc) {
+         width: calc(520 / 920 * 100%);
+        
+    }
+
+}
+.Merit_box-number{
+font-weight: 600;
+font-size: 70px;
+line-height: 1;
+color:#FABE00 ;
+
+
+}
+.Merit_box-text{
+font-weight: 700;
+font-style: Bold;
+font-size: 20px;
+line-height: 170%;
+letter-spacing: 10%;
+
+
+}
+.Merit_box-body-text{
+    
+font-weight: 400;
+font-size: 15px;
+line-height: 2;
+margin-top: 16px;
+
+    @include mq(pc) {
+       margin-top: 16px;
+    }
+}
+// price
+.price{
+    padding: 60px 0 60px ;
+}
+.price_inner{
+
+}
+.price_head{
+    text-align: center;
+font-weight: 700;
+font-style: Bold;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+.price_contens{
+    margin-top: 42px;
+  overflow-x: auto;
+
+}
+.price_table{
+    width: 620px;
+    text-align: center;
+    border-collapse:collapse ;
+    table-layout: fixed;
+  
+    th,td{
+height: 60px;
+vertical-align: middle;
+ 
+ &:nth-child(1){
+    width: 130px;
+ }
+ &:nth-child(2){
+    width: 90px;
+     background:#FFF9E5 ;
+ }
+ 
+
+
+}
+
+}
+th{
+   
+font-weight: 700;
+font-style: Bold;
+font-size: 16px;
+line-height: 170%;
+letter-spacing: 10%;
+text-align: center;
+ 
+
+
+    img{
+        width: 70px;
+
+    }
+    
+
+}
+
+td{
+font-weight: 700;
+font-style: Bold;
+font-size: 16px;
+line-height: 170%;
+letter-spacing: 3%;
+
+
+
+}
+thead{
+
+
+}
+tbody{
+    tr{
+        border-top: solid 1px #111;
+    }
+   
+    
+
+}
+
 // cta
 .cta{
 
