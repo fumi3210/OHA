@@ -992,6 +992,11 @@ body {
 .price {
   padding: 60px 0 60px;
 }
+@media screen and (min-width: 768px) {
+  .price {
+    padding: 100px 0 100px;
+  }
+}
 
 .price_head {
   text-align: center;
@@ -1013,16 +1018,38 @@ body {
   border-collapse: collapse;
   table-layout: fixed;
 }
+@media screen and (min-width: 768px) {
+  .price_table {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .price_table th, .price_table td {
   height: 60px;
   vertical-align: middle;
 }
+@media screen and (min-width: 768px) {
+  .price_table th, .price_table td {
+    height: 100px;
+  }
+}
 .price_table th:nth-child(1), .price_table td:nth-child(1) {
   width: 130px;
+}
+@media screen and (min-width: 768px) {
+  .price_table th:nth-child(1), .price_table td:nth-child(1) {
+    width: 250px;
+  }
 }
 .price_table th:nth-child(2), .price_table td:nth-child(2) {
   width: 90px;
   background: #FFF9E5;
+}
+@media screen and (min-width: 768px) {
+  .price_table th:nth-child(2), .price_table td:nth-child(2) {
+    width: 90px;
+  }
 }
 
 th {
@@ -1033,8 +1060,18 @@ th {
   letter-spacing: 10%;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  th {
+    font-size: 20px;
+  }
+}
 th img {
   width: 70px;
+}
+@media screen and (min-width: 768px) {
+  th img {
+    width: 123px;
+  }
 }
 
 td {
@@ -1044,7 +1081,6 @@ td {
   line-height: 170%;
   letter-spacing: 3%;
 }
-
 tbody tr {
   border-top: solid 1px #111;
 }

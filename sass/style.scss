@@ -1050,8 +1050,12 @@ margin-top: 16px;
 // price
 .price{
     padding: 60px 0 60px ;
+    @include mq(pc) {
+        padding: 100px 0 100px ;
+    }
 }
 .price_inner{
+   
 
 }
 .price_head{
@@ -1073,17 +1077,32 @@ letter-spacing: 0%;
     text-align: center;
     border-collapse:collapse ;
     table-layout: fixed;
+    @include mq(pc) {
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
   
     th,td{
 height: 60px;
 vertical-align: middle;
+@include mq(pc) {
+     height: 100px;
+   
+}
  
  &:nth-child(1){
     width: 130px;
+    @include mq(pc) {
+        width: 250px;
+    }
  }
  &:nth-child(2){
     width: 90px;
      background:#FFF9E5 ;
+     @include mq(pc) {
+        width: 90px;
+     }
  }
  
 
@@ -1099,11 +1118,17 @@ font-size: 16px;
 line-height: 170%;
 letter-spacing: 10%;
 text-align: center;
+@include mq(pc) {
+    font-size: 20px;
+}
  
 
 
     img{
         width: 70px;
+        @include mq(pc) {
+            width: 123px;
+        }
 
     }
     
@@ -1116,6 +1141,10 @@ font-style: Bold;
 font-size: 16px;
 line-height: 170%;
 letter-spacing: 3%;
+@include mq(pc) {
+    
+
+}
 
 
 
