@@ -1206,7 +1206,7 @@ text-align: center;
     }
 }
 // contact
-.conatct{
+.contact{
     padding: 60px 0 60px;
     background: url(../img/bg\ \(5\).png) repeat top left / 529px auto;
     @include mq(pc) {
@@ -1283,6 +1283,44 @@ text-align: center;
     @include mq(pc) {
         margin-top: 38px;
     }
+
+}
+.form_filed{
+
+}
+.form_filed-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+}
+.form_filed-label{
+    font-weight: 700;
+
+}
+.form_filed-tag{
+    background: #EE8013;
+    padding: 6px 9px ;
+    text-align: center;
+    color: #ffff;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 11px;
+
+}
+.form_filed-item{
+    margin-top: 14px;
+[type ="text"],
+[type ="email"]
+
+{
+border: 3px solid #111111;
+background: #ffff;
+padding:15px  16px 14px ;
+width: 100%;
+
+}
 
 }
 
