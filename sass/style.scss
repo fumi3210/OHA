@@ -1,5 +1,5 @@
 body{
-    background:#FAFAFA ;
+    background:#ffff;
 }
 $font-jp: 'Noto Sans JP', sans-serif;
 $font-en: 'Montserrat', sans-serif;
@@ -1205,4 +1205,85 @@ text-align: center;
 
     }
 }
+// contact
+.conatct{
+    padding: 60px 0 60px;
+    background: url(../img/bg\ \(5\).png) repeat top left / 529px auto;
+    @include mq(pc) {
+        padding: 100px 0 100px ;
+    }
+
+}
+.contact_inner{
+
+}
+.contact_box{
+    background: #fff;
+    padding: 60px 20px ;
+    border-radius: 30px;
+    @include mq(pc) {
+        padding-left: 264px;
+        padding-right: 264px;
+    }
+
+}
+.contact_heading{
+    text-align: center;
+
+}
+.contact_head{
+font-weight: 700;
+font-style: Bold;
+font-size: 38px;
+line-height: 100%;
+letter-spacing: 10%;
+@include mq(pc) {
+font-weight: 700;
+font-style: Bold;
+font-size: 50px;
+line-height: 100%;
+letter-spacing: 10%;
+
+}
+
+
+}
+.contact_text{
+    margin-top: 14px;
+    @include mq(pc) {
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 8%;
+text-align: center;
+
+    }
+}
+.contact_form{
+ margin-top: 30px;
+ @include mq(pc) {
+ margin-top: 50px;
+ }
+
+}
+.contact_fields{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.contact_fild{
+
+}
+.contact_privacy{
+    margin-top: 30px;
+
+}
+.contact_button{
+    margin-top: 30px;
+    @include mq(pc) {
+        margin-top: 38px;
+    }
+
+}
+
 
