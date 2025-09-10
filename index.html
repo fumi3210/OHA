@@ -397,7 +397,7 @@
               <div class="form_filed-item">
                 <div class="form_filed-radios">
                 <label class="form_filed-radio">
-                <input type="radio" class="form_filed-radio">
+                <input type="radio">
                
                 <span class="form_filed-radio-text">アプリの質問</span>
                 </label>
@@ -423,6 +423,7 @@
             <div class="form_filed">
               <div class="form_filed-head">
                 <label for="age" class="form_filed-label">年代</label>
+                <span class="form_filed-tag  is-option">必須</span>
               </div>
               <div class="form_filed-item">
                 <select name="age" id="age">
@@ -432,7 +433,9 @@
                   <option value="30">30代</option>
                   <option value="40">40代</option>
                   <option value="50">50代</option>
-                  <option value="60">60代以上</option>
+                  <option value="60">60代</option>
+                  <option value="60">70代</option>
+                  <option value="60">80代</option>
                 </select>
               </div>
             </div>
@@ -442,11 +445,11 @@
           <div class="contact_filed">
             <div class="form_filed">
               <div class="form_filed-head">
-                <label for="message" class="form_filed-label">お問い合わせ内容</label>
+                <label for="your-message" class="form_filed-label">お問い合わせ内容</label>
                 <span class="form_filed-tag">必須</span>
               </div>
               <div class="form_filed-item">
-                <textarea name="message" id="message" rows="5" placeholder="お問い合わせ内容をご入力ください" required></textarea>
+                <textarea name="your-message" id="your-message" rows="5" placeholder="ここに文章を入力してくださいここに文章を入力してください" required></textarea>
               </div>
             </div>
           </div>
@@ -455,15 +458,16 @@
 
         <!-- プライバシーポリシー -->
         <div class="contact_privacy">
-          <label>
-            <input type="checkbox" name="privacy" required>
-            プライバシーポリシーに同意する
-          </label>
+        <label class="form_checkbox">
+        <input type="checkbox" name="privacy" class="form_check-box-input">
+        <span class="form_check-box-text"><a href="" target="_blank">
+            プライバシー</a>ポリシーに同意する</span>
+        </label>
         </div>
 
         <!-- 送信ボタン -->
         <div class="contact_button">
-          <button type="submit">送信する</button>
+          <button type="submit"><a href="">送信する</a></button>
         </div>
 
       </form>

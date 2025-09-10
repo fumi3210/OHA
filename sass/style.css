@@ -1192,6 +1192,11 @@ tbody tr {
   flex-direction: column;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .contact_fields {
+    flex-direction: row;
+  }
+}
 
 .contact_privacy {
   margin-top: 30px;
@@ -1226,6 +1231,9 @@ tbody tr {
   font-weight: 700;
   font-size: 11px;
 }
+.form_filed-tag.is-option {
+  background: #389B47;
+}
 
 .form_filed-item {
   margin-top: 14px;
@@ -1236,4 +1244,128 @@ tbody tr {
   background: white;
   padding: 15px 16px 14px;
   width: 100%;
+}
+.form_filed-item [type=radio] {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+.form_filed-item [type=radio]:checked + .form_filed-radio-text::after {
+  opacity: 1;
+}
+.form_filed-item select {
+  border-radius: 5px;
+  border: 3px solid #111;
+  background: white;
+  width: 100%;
+  font-weight: 700;
+  padding: 15px 45px 14px 16px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url("../img/Polygon 1 (1).png") no-repeat right 16px top 20.217px/10.182px auto;
+}
+.form_filed-item textarea {
+  border-radius: 5px;
+  border: 3px solid #111;
+  width: 100%;
+  height: 180px;
+  padding: 16px;
+}
+
+.form_filed-radios {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form_filed-radio-text {
+  padding-left: 28px;
+  position: relative;
+}
+.form_filed-radio-text::before, .form_filed-radio-text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.form_filed-radio-text::before {
+  width: 24px;
+  height: 24px;
+  border: solid 3px #111;
+  left: 0;
+}
+.form_filed-radio-text::after {
+  background: #F5810E;
+  width: 10px;
+  height: 10px;
+  left: 7px;
+  opacity: 0;
+}
+
+.contact_privacy {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.form_check-box-input {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+.form_check-box-input:checked + .form_check-box-text::after {
+  opacity: 1;
+}
+
+.form_check-box-text {
+  font-size: 14px;
+  font-weight: 700;
+  padding-left: 30px;
+  position: relative;
+}
+.form_check-box-text::before, .form_check-box-text::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.form_check-box-text::before {
+  width: 24px;
+  height: 24px;
+  border-radius: 1px;
+  border: 1px solid #111;
+}
+.form_check-box-text::after {
+  left: -1px;
+  margin-top: -1.2px;
+  width: 20px;
+  height: 17.53px;
+  background: url(../img/Vector\ 30\ \(Stroke\).png) no-repeat center center/contain;
+  opacity: 0;
+}
+.form_check-box-text a {
+  text-decoration: underline;
+  font-weight: inherit;
+}
+
+.contact_button {
+  text-align: center;
+}
+.contact_button a {
+  display: inline-block;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 3%;
+  text-align: center;
+  border: solid 2px #111;
+  padding: 10px 42px;
+  border-radius: 60px;
 }/*# sourceMappingURL=style.css.map */

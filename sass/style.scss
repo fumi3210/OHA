@@ -1270,6 +1270,9 @@ text-align: center;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    @include mq(pc) {
+        flex-direction: row;
+    }
 }
 .contact_fild{
 
@@ -1307,6 +1310,10 @@ text-align: center;
     border-radius: 2px;
     font-weight: 700;
     font-size: 11px;
+    &.is-option{
+    background: #389B47;
+
+    }
 
 }
 .form_filed-item{
@@ -1321,7 +1328,173 @@ padding:15px  16px 14px ;
 width: 100%;
 
 }
+[type ="radio"]{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+clip:rect(0,0,0,0);
+overflow: hidden;
+&:checked{
++ .form_filed-radio-text{
+    &::after{
+        opacity: 1;
+
+    }
+}
+}
 
 }
+select{
+    
+    border-radius: 5px;
+    border:  3px solid #111;
+    background: #ffff;
+    width: 100%;
+    font-weight: 700;
+    padding: 15px 45px 14px 16px ;
+    appearance: none;
+    background: url("../img/Polygon 1 (1).png") no-repeat right 16px top 20.217px / 10.182px auto;
+
+
+
+}
+textarea{
+    border-radius: 5px;
+    border: 3px solid #111;
+    width: 100%;
+    height: 180px;
+    padding: 16px;
+
+    }
+
+}
+// ラジオ
+.form_filed-radio{
+
+}
+.form_filed-radios{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+
+.form_filed-radio-text{
+    padding-left: 28px;
+    position: relative;
+    &::before,
+    &::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+
+
+    }
+    // 枠線の部分
+    &::before{
+        width: 24px;
+        height: 24px;
+        border: solid 3px #111;
+        left: 0;
+    }
+    // 枠線の中身
+    &::after{
+        background: #F5810E;
+        width: 10px;
+        height: 10px;
+        left: 7px;
+        opacity: 0;
+        
+    }
+    
+    
+
+
+}
+// プライバシーポリシー
+.contact_privacy{
+margin-top: 30px;
+text-align: center;
+}
+.form_checkbox{
+
+}
+.form_check-box-input{
+width: 1px;
+height: 1px;
+position: absolute;
+clip:rect(0,0,0,0);
+overflow: hidden;
+&:checked{
++.form_check-box-text{
+    &::after{
+        opacity: 1;
+
+    }
+}
+}
+
+}
+.form_check-box-text{
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 30px;
+    position: relative;
+    &::before,
+    &::after{
+   position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    }
+    &::before{
+     width: 24px;
+        height: 24px;
+        border-radius: 1px ;
+        border: 1px solid #111;
+
+    }
+    &::after{
+        left: -1px;
+        margin-top: -1.2px;
+        width: 20px;
+        height: 17.53px;
+        background:url(../img/Vector\ 30\ \(Stroke\).png)
+        no-repeat center center /contain;
+           opacity: 0;
+
+
+    }
+a{
+    text-decoration: underline;
+    font-weight: inherit;
+    
+}
+
+}
+// 送信ボタン
+.contact_button{
+text-align: center;
+    a{
+display: inline-block;
+font-weight: 700;
+font-style: Bold;
+font-size: 16px;
+line-height: 170%;
+letter-spacing: 3%;
+text-align: center;
+border: solid 2px #111;
+padding: 10px 42px;
+border-radius: 60px;
+
+    }
+   
+}
+
+
 
 
