@@ -1520,6 +1520,40 @@ border-radius: 60px;
     }
    
 }
+//  footer
+.footer{
+    background: #111;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-align: center;
+
+
+}
+.footer_inner{
+
+}
+.footer_copyright{
+font-family: Noto Sans JP;
+font-weight: 400;
+font-size: 12px;
+line-height: 100%;
+letter-spacing: 8%;
+text-align: center;
+color: #ffff;
+
+
+}
+.pagetop{
+    position: fixed;
+    right: 10px;
+    bottom: 60px;
+img{
+    width: 50px;
+
+}
+}
+
+
 
 
 

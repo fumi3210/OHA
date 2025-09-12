@@ -1400,3 +1400,29 @@ tbody tr {
   padding: 10px 42px;
   border-radius: 60px;
 }
+
+.footer {
+  background: #111;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-align: center;
+}
+
+.footer_copyright {
+  font-family: Noto Sans JP;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 8%;
+  text-align: center;
+  color: white;
+}
+
+.pagetop {
+  position: fixed;
+  right: 10px;
+  bottom: 60px;
+}
+.pagetop img {
+  width: 50px;
+}
