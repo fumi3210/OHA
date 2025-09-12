@@ -1484,4 +1484,14 @@ tbody tr {
 .about-mooudal_close-button {
   text-align: center;
   margin-top: 30px;
+}
+.about-mooudal_close-button .moudal_button {
+  display: inline-block;
+  font-family: Noto Sans JP;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  border: solid 1px #111;
+  padding: 10px 50px;
+  border-radius: 60px;
 }/*# sourceMappingURL=style.css.map */

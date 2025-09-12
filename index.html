@@ -121,27 +121,30 @@
 というアイデアで誕生したのがOHA!です。<br/>
 日本中の起こしたい人と<br/>起こされたい人が<br class="is-pc"/>ランダムにマッチングして<br/>起こし起こされることで、<br/>朝の日常にちょっとした刺激が生まれます。</p>
     <p class="About_contens-sub-text">＼開発者はお坊さん？／</p>
-    <div class="About_button"><a href="">誕生ストーリーを見る</a></div>
+    <div class="About_button"><a href="" id="js-moudal_open">誕生ストーリーを見る</a></div>
 
     </div>
      </div>
      </section>
 
     <!-- モーダル -->
-     <dialog class="about_moudal" open >
-    <div class="about_moudal-head">
-    <button class="about_moudal-close-icon"><img src="./img/close-icon (1).png" alt="" srcset=""></button>
-     </div>
-    <div class="about_moudal-body">
+    <!-- モーダル -->
+<dialog id="js-about_moudal" class="about_moudal">
+  <div class="about_moudal-head">
+    <button class="about_moudal-close-icon js-moudal_close">
+      <img src="./img/close-icon (1).png" alt="閉じる">
+    </button>
+  </div>
+  <div class="about_moudal-body">
     <p>お坊さんの師匠は、ある日自分が寝坊して仏教の講義に遅刻してしまい、急いで作ったアプリがきっかけでした。そのアプリは、自分のスマートフォンにセットした時間になると、仏教の教えをパッと思い出すようになっていました。<br/>
-お坊さんはそのアプリを見て、自分もそんなアプリが欲しいと思い、師匠に頼んで自分専用のアプリを作ってもらったのだそうです。そして、お坊さんは太郎にそのアプリを使ってもらうように勧めました。</p>
+    お坊さんはそのアプリを見て、自分もそんなアプリが欲しいと思い、師匠に頼んで自分専用のアプリを作ってもらったのだそうです。そして、お坊さんは太郎にそのアプリを使ってもらうように勧めました。</p>
     <p>太郎は早速、そのアプリをダウンロードして設定してみました。翌朝、セットした時間になると、スマートフォンが音を立てて仏教の教えが表示されました。「一日を立派に過ごすためには、まず朝イチで身心の健康を整えることが大切です」という教えに太郎は心を動かされ、僧侶になるかもしれないと思いました。<br/>
-以来、太郎は毎朝ちゃんと起きることができ、授業に遅刻することはなくなりました。そして、太郎はそのアプリの効果に感服し、友人たちにも勧めるようになっていきました。そうして、そのアプリは口コミで広まり、多くの人に利用されるようになっていったのでした。</p>
-
-    </div>
-    <div class="about-mooudal_close-button"><button class="moudal_button">閉じる</button></div>
-
-     </dialog>
+    以来、太郎は毎朝ちゃんと起きることができ、授業に遅刻することはなくなりました。そして、太郎はそのアプリの効果に感服し、友人たちにも勧めるようになっていきました。そうして、そのアプリは口コミで広まり、多くの人に利用されるようになっていったのでした。</p>
+  </div>
+  <div class="about-mooudal_close-button">
+    <button class="moudal_button js-moudal_close">閉じる</button>
+  </div>
+</dialog>
 
     
    <!-- Movie -->

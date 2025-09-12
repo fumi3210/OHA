@@ -34,3 +34,16 @@ const inViewItems =  document.querySelectorAll(".js-in-view ");
 inViewItems.forEach(function(inViewItems){
   intersectionObserver.observe(inViewItems);
 });
+// モーダル
+jQuery(function($) {
+  // 開く
+  $("#js-moudal_open").on("click", function(e) {
+    e.preventDefault(); // ページ遷移を止める
+    $("#js-about_moudal")[0].showModal();
+  });
+
+  // 閉じる
+  $(".js-moudal_close").on("click", function() {
+    $("#js-about_moudal")[0].close();
+  });
+});
