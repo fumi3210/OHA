@@ -1,6 +1,8 @@
-body{
-    background:#ffff;
+html, body {
+  margin: 0;
+  padding: 0;
 }
+
 $font-jp: 'Noto Sans JP', sans-serif;
 $font-en: 'Montserrat', sans-serif;
 $font-size-base: 16px;
@@ -88,12 +90,12 @@ color: #111;
 }
 .header_button{
    
-    border-radius: 60px;
-    border: solid 1px #111;
-    color: #111;
-    padding: 10px 30px ;
-    background: #ffff;
-    font-weight: bold;
+border-radius: 60px;
+border: solid 1px #111;
+color: #111;
+padding: 10px 30px ;
+background: #ffff;
+font-weight: bold;
     
 }
 .drawer_icon {
@@ -125,6 +127,7 @@ position: absolute;
 
   }
 }
+
 // mv
 .mv{
     border-radius: 20px ;
@@ -160,11 +163,11 @@ position: relative;
 }
 .mv_lead-1,
 .mv_lead-2{
-    display: block;
-    border-radius: 5px;
-    padding: 10px ;
-    margin-left: auto;
-    margin-right: auto;
+display: block;
+border-radius: 5px;
+padding: 10px ;
+margin-left: auto;
+margin-right: auto;
 font-feature-settings: 'pal' on;
 width: fit-content;
 font-family: Noto Sans JP;
@@ -175,9 +178,9 @@ line-height: 1;
 letter-spacing: 2.2px;
 background: #fafafa;
 @include mq(pc) {
-    margin-left: 0;
-    margin-right: 0;
-    padding: 12px 16px;
+margin-left: 0;
+margin-right: 0;
+padding: 12px 16px;
 }
 
 
@@ -240,6 +243,7 @@ text-align: center;
 
     }
 }
+
 // case
 .case{
     padding: 60px 0 60px ;
@@ -475,11 +479,11 @@ padding-bottom:calc(10px - 2px ) ;
 }
 // About
 .About{
-    overflow: hidden;
-    padding: 60px 0 60px ;
-    @include mq(pc) {
-        padding: 50px 0 50px ;
-    }
+overflow: hidden;
+padding: 60px 0 60px ;
+@include mq(pc) {
+padding: 50px 0 50px ;
+}
 
     
    
@@ -489,70 +493,62 @@ padding-bottom:calc(10px - 2px ) ;
 
 }
 .About_logo{
-    text-align: center;
+text-align: center;
   
-    img{
-        width: 180px;
-        @include mq(pc) {
-            width: 230px;
-        }
+img{
+width: 180px;
+@include mq(pc) {
+width: 230px;
+}
 
-    }
+}
 }
 .About_contens{
-    text-align: center;
-    margin-top: 150px;
-    position: relative;
-      padding-top: 288px;
-      @include mq(pc) {
-                 margin-top: 176px;
-                 padding-top: 264px;
-                 padding-bottom: 100px;
-            }
+text-align: center;
+margin-top: 150px;
+position: relative;
+padding-top: 288px;
+@include mq(pc) {
+margin-top: 176px;
+padding-top: 264px;
+padding-bottom: 100px;
+}
       
-      &::before{
-        position: absolute;
-        width: 1100px;
-        height: 1100px;
-        border-radius: 50%;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-       background: linear-gradient( #F0D320, #F8B819);
-            z-index: -1;
-            content: "";
-            @include mq(pc) {
-                width: 800px;
-                height: 800px;
-            }
-            
-           
-      }
-    
-
+&::before{
+position: absolute;
+width: 1100px;
+height: 1100px;
+border-radius: 50%;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+background: linear-gradient( #F0D320, #F8B819);
+z-index: -1;
+content: "";
+@include mq(pc) {
+width: 800px;
+height: 800px;
+}
+}
 }
 .About_img{
-    
-  
-    position: absolute;
-    text-align: center;
-    top: -110px;
-    left: 0;
-    width: 100%;
-    @include mq(pc) {
-        top: -126px;
-    }
-
-    img{
-        width: 320px;
-        @include mq(pc) {
-            width: 330px;
-        }
-
-    }
+position: absolute;
+text-align: center;
+top: -110px;
+left: 0;
+width: 100%;
+@include mq(pc) {
+top: -126px;
+}
+img{
+width: 320px;
+ @include mq(pc) {
+width: 330px;
+}
+}
 }
 .About_contens-text{
-    font-family: Noto Sans JP;
+font-family: Noto Sans JP;
 font-weight: 700;
 font-style: Bold;
 font-size: 16px;
@@ -560,7 +556,7 @@ line-height: 2;
 letter-spacing: 0%;
 text-align: center;
 @include mq(pc) {
-    margin-top: 40px;
+margin-top: 40px;
 }
 
     
@@ -577,39 +573,34 @@ text-align: center;
 color: #111111;
 margin-top: 40px;
 @include mq(pc) {
-    margin-top: 42px;
+margin-top: 42px;
 }
 }
 .About_button{
-    margin-top: 12px;
-    a{
-        display: inline-block;
-        background: #fafafa;
-        border: solid 1px #111;
-        border-radius: 60px;
-        padding: 10px 30px ;
-        color: #111111;
-
-    }
+margin-top: 12px;
+a{
+display: inline-block;
+background: #fafafa;
+border: solid 1px #111;
+border-radius: 60px;
+padding: 10px 30px ;
+color: #111111;
+}
 }
 // Movie
 .Movie{
-   background: url(../img/bg\ \(5\).png) repeat top left / 529px auto;
-
-    width: 100%;
-    padding: 60px 0 60px ;
-    @include mq(pc) {
-        padding: 100px 0 100px ;
-    }
-
-
+background: url(../img/bg\ \(5\).png) repeat top left / 529px auto;
+width: 100%;
+padding: 60px 0 60px ;
+@include mq(pc) {
+padding: 100px 0 100px ;
+}
 }
 .Movie_inner{
 
 }
 .Movie_heading{
-    text-align: center;
-
+text-align: center;
 }
 .Movie_head{
 margin-top: 60px;
@@ -619,11 +610,10 @@ font-size: 38px;;
 line-height: 100%;
 letter-spacing: 10%;
 @include mq(pc) {
-    font-family: Montserrat;
+font-family: Montserrat;
 font-weight: 700;
 font-style: Bold;
 font-size: 50px;
-leading-trim: NONE;
 line-height: 100%;
 letter-spacing: 10%;
 
@@ -639,11 +629,10 @@ letter-spacing: 8%;
 text-align: center;
 margin-top: 14px;
 @include mq(pc) {
-    width: 229;
+width: 229;
 height: 16;
 top: 164px;
 left: 605px;
-angle: 0 deg;
 opacity: 1;
 
 }
@@ -651,34 +640,32 @@ opacity: 1;
 
 }
 .Movie_contens{
-    text-align: center;
-    margin-top:  32px;
-    iframe{
-        width: 345px;
-        max-width: 100%;
-        height: auto;
-        aspect-ratio: 345/194;
-        @include mq(pc) {
-            width: 640px;
-             aspect-ratio: 640/360;
-        }
-
-    }
+text-align: center;
+margin-top:  32px;
+iframe{
+width: 345px;
+max-width: 100%;
+height: auto;
+aspect-ratio: 345/194;
+@include mq(pc) {
+width: 640px;
+aspect-ratio: 640/360;
+}
+}
 }
 // How to use
 .How_to-use{
-    padding: 60px 0 60px ;
-    @include mq(pc) {
-        padding: 100px 0 100px ;
-    }
-
+padding: 60px 0 60px ;
+@include mq(pc) {
+padding: 100px 0 100px ;
+}
 }
 .How_to-use-inner{
-    @include mq(pc) {
-        max-width: calc(1140px + 30px * 2);
-        margin-left: auto;
-        margin-right: auto;
-    }
+@include mq(pc) {
+max-width: calc(1140px + 30px * 2);
+margin-left: auto;
+margin-right: auto;
+}
 
 }
 .How_to-use_heading{
@@ -721,114 +708,90 @@ text-align: center;
 
 }
 .How_to-use-boxes{
-    margin-top: 104px;
-     display: flex;
-    flex-direction: column;
-    gap: 112px;
-    @include mq(pc) {
-        margin-top: 89px;
-        gap: 75px;
-          
-        
-    }
-    
-    
-
-
+margin-top: 104px;
+display: flex;
+flex-direction: column;
+gap: 112px;
+@include mq(pc) {
+margin-top: 89px;
+gap: 75px;
+}
 }
 .How_to-use-box{
-    padding: 54px 40px 48px;
-    background: #FFFBF0;
-    border-radius: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
-    @include mq(pc) {
-        padding: 44px 10px 56px ;
-        border-radius:  40px;
-        
-    }
-    
-
+padding: 54px 40px 48px;
+background: #FFFBF0;
+border-radius: 30px;
+margin-left: 20px;
+margin-right: 20px;
+@include mq(pc) {
+padding: 44px 10px 56px ;
+border-radius:  40px;
+}
 }
 .How_to-box-title{
-    text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-    position: relative;
-    @include mq(pc) {
-        font-size: 22px;
-          padding-right: 95px;
-          width: fit-content;
-          margin-left: auto;
-          margin-right: auto;
-
-    }
-    img{
-        width: 85px;
-        position: absolute;
-        right: 50%;
-        transform: translateX(50%);
-        bottom: calc(100% + 16px);
-        @include mq(pc) {
-            right: 0;
-               transform: translateX(0);
-                    bottom: 0;
-          
-
-        }
-       
-    }
-        
-    }
-
-    
-   
-
-
+text-align: center;
+font-size: 18px;
+font-weight: 700;
+position: relative;
+@include mq(pc) {
+font-size: 22px;
+padding-right: 95px;
+width: fit-content;
+margin-left: auto;
+margin-right: auto;
+}
+img{
+width: 85px;
+position: absolute;
+right: 50%;
+transform: translateX(50%);
+bottom: calc(100% + 16px);
+@include mq(pc) {
+right: 0;
+transform: translateX(0);
+bottom: 0;
+}
+}
+}
 .How_to-steps{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    @include mq(pc) {
-        flex-direction: row;
-        gap: 24px;
-        max-width: 948px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+@include mq(pc) {
+flex-direction: row;
+gap: 24px;
+max-width: 948px;
+margin-left: auto;
+margin-right: auto;
+}
 }
 
 .How_to-step{
-    @include mq(pc) {
-    flex: 1;
-    }
-    
-
-    
-   
+@include mq(pc) {
+flex: 1;
+}
 }
 .ste_box{
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 46px;
-      position: relative;
-      display: flex;
-    flex-direction: column;
-  gap: 6px;
-  align-items: center;
-
+margin-left: 40px;
+margin-right: 40px;
+margin-top: 46px;
+position: relative;
+display: flex;
+flex-direction: column;
+gap: 6px;
+align-items: center;
 }
 .step_box-title{
-     position: absolute;
-     display: flex;
-     justify-content: center;
-     flex-direction: column;
-    content: "";
-    top: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 20px 25px;
+position: absolute;
+display: flex;
+justify-content: center;
+flex-direction: column;
+content: "";
+top: -50px;
+left: 50%;
+transform: translateX(-50%);
+padding: 20px 25px;
 text-align: center;
 border-radius:  50%;
 width: 90px;
@@ -845,7 +808,7 @@ background: #E4780C;
 
 }
 .step_box-head{
-    font-family: Montserrat;
+font-family: Montserrat;
 font-weight: 700;
 font-style: Bold;
 font-size: 15px;
@@ -1207,8 +1170,9 @@ text-align: center;
 }
 // contact
 .contact{
-    padding: 60px 0 60px;
-    background: url(../img/bg\ \(5\).png) repeat top left / 529px auto;
+    padding: 60px 0 60px ;
+   background: url(../img/bg\ \(5\).png) repeat top left / 529px auto;
+   background-size:cover ;
     @include mq(pc) {
         padding: 100px 0 100px ;
     }
@@ -1455,49 +1419,45 @@ clip:rect(0,0,0,0);
 overflow: hidden;
 &:checked{
 +.form_check-box-text{
-    &::after{
-        opacity: 1;
-
-    }
+&::after{
+opacity: 1;
+}
 }
 }
 
 }
 .form_check-box-text{
-    font-size: 14px;
-    font-weight: 700;
-    padding-left: 30px;
-    position: relative;
-    &::before,
-    &::after{
-   position: absolute;
-    content: "";
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+font-size: 14px;
+font-weight: 700;
+padding-left: 30px;
+position: relative;
+&::before,
+&::after{
+position: absolute;
+content: "";
+top: 50%;
+left: 0;
+transform: translateY(-50%);
+}
+&::before{
+width: 24px;
+height: 24px;
+border-radius: 1px ;
+border: 1px solid #111;
+}
+&::after{
+left: -1px;
+margin-top: -1.2px;
+width: 20px;
+height: 17.53px;
+background:url(../img/Vector\ 30\ \(Stroke\).png)
+no-repeat center center /contain;
+opacity: 0;
 
-    }
-    &::before{
-     width: 24px;
-        height: 24px;
-        border-radius: 1px ;
-        border: 1px solid #111;
-
-    }
-    &::after{
-        left: -1px;
-        margin-top: -1.2px;
-        width: 20px;
-        height: 17.53px;
-        background:url(../img/Vector\ 30\ \(Stroke\).png)
-        no-repeat center center /contain;
-           opacity: 0;
-
-
-    }
+}
 a{
-    text-decoration: underline;
-    font-weight: inherit;
+text-decoration: underline;
+font-weight: inherit;
     
 }
 
@@ -1505,7 +1465,7 @@ a{
 // 送信ボタン
 .contact_button{
 text-align: center;
-    a{
+a{
 display: inline-block;
 font-weight: 700;
 font-style: Bold;
@@ -1522,14 +1482,12 @@ border-radius: 60px;
 }
 //  footer
 .footer{
-    background: #111;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    text-align: center;
-
-
 }
 .footer_inner{
+ background: #111;
+text-align: center;
+padding-top: 18px ;
+padding-bottom: 18px;
 
 }
 .footer_copyright{
@@ -1544,17 +1502,19 @@ color: #ffff;
 
 }
 .pagetop{
-    position: fixed;
-    right: 10px;
-    bottom: 60px;
+position: fixed;
+right: 10px;
+bottom: -2px;
 img{
-    width: 50px;
+width: 50px;
+@include mq(pc) {
+width: 76px;
+}
 
 }
 }
-
-
-
-
-
-
+.contact,
+.About {
+margin-bottom: 0;
+padding-bottom: 0;
+}

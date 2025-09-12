@@ -1,6 +1,7 @@
 @charset "UTF-8";
-body {
-  background: white;
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -591,7 +592,6 @@ body {
     font-weight: 700;
     font-style: Bold;
     font-size: 50px;
-    leading-trim: NONE;
     line-height: 100%;
     letter-spacing: 10%;
   }
@@ -611,7 +611,6 @@ body {
     height: 16;
     top: 164px;
     left: 605px;
-    angle: 0 deg;
     opacity: 1;
   }
 }
@@ -1127,6 +1126,7 @@ tbody tr {
 .contact {
   padding: 60px 0 60px;
   background: url(../img/bg\ \(5\).png) repeat top left/529px auto;
+  background-size: cover;
 }
 @media screen and (min-width: 768px) {
   .contact {
@@ -1401,11 +1401,11 @@ tbody tr {
   border-radius: 60px;
 }
 
-.footer {
+.footer_inner {
   background: #111;
+  text-align: center;
   padding-top: 18px;
   padding-bottom: 18px;
-  text-align: center;
 }
 
 .footer_copyright {
@@ -1421,8 +1421,19 @@ tbody tr {
 .pagetop {
   position: fixed;
   right: 10px;
-  bottom: 60px;
+  bottom: -2px;
 }
 .pagetop img {
   width: 50px;
+}
+@media screen and (min-width: 768px) {
+  .pagetop img {
+    width: 76px;
+  }
+}
+
+.contact,
+.About {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
