@@ -1434,4 +1434,54 @@ tbody tr {
 .About {
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 1s, transform 1s;
+}
+.fade-in-up.is-in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about_moudal {
+  overscroll-behavior-y: none;
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  max-width: 70%;
+  max-height: calc(100% - 40px);
+  overflow: auto;
+  padding: 16px 15px 64px;
+  border-radius: 20px;
+  background: white;
+  border: none;
+}
+
+.about_moudal-head {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+}
+
+.about_moudal-close-icon img {
+  width: 37px;
+}
+
+.about_moudal-body {
+  margin-top: 12px;
+}
+.about_moudal-body p {
+  font-size: 14px;
+}
+.about_moudal-body p:nth-child(n+2) {
+  margin-top: 20px;
+}
+
+.about-mooudal_close-button {
+  text-align: center;
+  margin-top: 30px;
 }/*# sourceMappingURL=style.css.map */

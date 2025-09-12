@@ -1513,3 +1513,69 @@ width: 76px;
 margin-bottom: 0;
 padding-bottom: 0;
 }
+// スムーススクロール
+.js-in-view {
+   
+
+}
+.fade-in-up{
+ opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 1s, transform 1s ;
+    &.is-in-view{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+}
+// モーダル
+.about_moudal{
+    overscroll-behavior-y: none;
+    position: fixed;
+    inset:0;
+    margin: auto ;
+    max-width: calc(100% - 15% * 2);
+   max-height:calc(100% - 20px  * 2) ;
+   overflow: auto;
+   padding: 16px 15px 64px;
+   border-radius: 20px;
+   background:#ffff;
+   border: none;
+
+}
+.about_moudal-head{
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+
+}
+.about_moudal-close-icon{
+    img{
+        width: 37px;
+
+    }
+}
+.about_moudal-body{
+    margin-top: 12px;
+    p{font-size: 14px;
+        &:nth-child(n+2){
+            margin-top: 20px;
+        }
+
+
+
+    }
+    
+
+}
+.about-mooudal_close-button{
+    text-align: center;
+    margin-top: 30px;
+    .moudal_button{
+        
+
+    }
+}
+
