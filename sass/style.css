@@ -1458,6 +1458,13 @@ tbody tr {
   border-radius: 20px;
   background: white;
   border: none;
+  z-index: 60;
+}
+@media screen and (min-width: 768px) {
+  .about_moudal {
+    width: 1140px;
+    padding: 49px 70px 75px;
+  }
 }
 
 .about_moudal-head {
@@ -1466,13 +1473,16 @@ tbody tr {
   position: sticky;
   top: 0;
 }
-
 .about_moudal-close-icon img {
   width: 37px;
 }
-
 .about_moudal-body {
   margin-top: 12px;
+}
+@media screen and (min-width: 768px) {
+  .about_moudal-body {
+    margin-top: 43px;
+  }
 }
 .about_moudal-body p {
   font-size: 14px;
