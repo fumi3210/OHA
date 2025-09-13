@@ -76,6 +76,18 @@ html, body {
   position: relative;
   width: 36px;
   height: 21px;
+  z-index: 51;
+}
+.drawer_icon.is-checked .drawer_icon-bar:nth-of-type(1) {
+  top: 10px;
+  transform: rotate(30deg);
+}
+.drawer_icon.is-checked .drawer_icon-bar:nth-of-type(2) {
+  display: none;
+}
+.drawer_icon.is-checked .drawer_icon-bar:nth-of-type(3) {
+  top: 10px;
+  transform: rotate(-30deg);
 }
 @media screen and (min-width: 768px) {
   .drawer_icon {
@@ -84,6 +96,7 @@ html, body {
 }
 
 .drawer_icon-bar {
+  transition: transform 0.3s linear, top 0.3s linear;
   position: absolute;
   top: 0;
   left: 0;
