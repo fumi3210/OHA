@@ -47,6 +47,17 @@ jQuery(function($) {
     $("#js-about_moudal")[0].close();
   });
 });
-// ドロワーメニュー
+// ドロワー
+$(".drawer_icon").on("click", function() {
+  $(this).toggleClass("is-checked");
+  $(".drawer_content").toggleClass("is-checked");
+});
+
+$(".drawer_content-link").on("click", function() {
+  $(".drawer_icon").removeClass("is-checked");
+  $(".drawer_content").removeClass("is-checked");
+});
+
+
 
 
