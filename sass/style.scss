@@ -127,6 +127,44 @@ position: absolute;
 
   }
 }
+// ドロワーの中身
+.drawer_content{
+    width: 320px;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   right: 0;
+   background:#F7BA1A ;
+   z-index: 50;
+   padding: 86px 40px 40px ;
+
+}
+.drawer_content-menu {
+  display: flex;
+  flex-direction: column; /* 縦並び */
+  align-items: flex-end;  /* 全部右寄せ */
+}
+
+.drawer_content-link {
+  display: block;
+  padding: 14px 0;
+  font-family: Noto Sans JP;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+
+.drawer_content-button {
+  display: inline-block;
+  margin-top: 20px; /* 上に余白 */
+  border-radius: 60px;
+  border: solid 1px #111;
+  color: #111;
+  padding: 10px 30px;
+  background: #fff;
+  font-weight: bold;
+}
+
 
 // mv
 .mv{
