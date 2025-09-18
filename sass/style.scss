@@ -764,7 +764,6 @@ font-family: Montserrat;
 font-weight: 400;
 font-style: Regular;
 font-size: 16px;
-leading-trim: NONE;
 line-height: 100%;
 letter-spacing: 8%;
 text-align: center;
@@ -1026,7 +1025,7 @@ padding: 10px 20px 24px ;
     img{
         width: 200px;
         @include mq(pc) {
-           width: calc(350 / 920 * 100%);
+           width: calc(920 / 350 * 100%);
         }
 
     }
@@ -1191,6 +1190,8 @@ tbody{
     
 
 }
+// Qa
+
 
 // cta
 .cta{
@@ -1670,4 +1671,149 @@ padding-bottom: 0;
 
     }
 }
+// Qa
+.QA{
+    padding: 60px 0 60px ;
+
+}
+.Qa_inner{
+
+}
+.Qa_heading{
+    text-align: center;
+
+}
+.Qa_head{
+font-weight: 700;
+font-style: Bold;
+font-size: 38px;
+line-height: 100%;
+letter-spacing: 10%;
+
+}
+.Qa_text{
+margin-top: 14px;
+font-weight: 400;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 8%;
+text-align: center;
+
+
+}
+.Qa_boxes{
+margin-top: 52px;
+display: flex;
+flex-direction: column;
+gap: 42px;
+
+}
+.Qa_box{
+
+}
+.Qa-box{
+border-radius: 10px;
+border: 3px solid #111111;
+background: #FFFFFF;
+text-align: left;
+margin-left: 20px;
+margin-right: 20px;
+&.is-open{
+.Qa_body{
+    display: block;
+}
+.Qa_box-head{
+    &::after{
+    transform: rotate(0);
+    }
+}
+
+}
+
+
+}
+.Qa_box-head{
+display: block;
+width: 100%;
+padding: 32px 40px 20px 15px ;
+position: relative;
+&::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 9.2px;
+    height: 6.8px;
+    background: url(../img/polygon\ \(2\).png)
+    no-repeat center center / contain;
+    transform: rotate(185deg);
+}
+
+}
+.Qa_box-head-icon{
+    left: 15px;
+    position: absolute;
+    top: -22px;
+display:grid;
+font-weight: 700;
+font-style: Bold;
+font-size: 22px;
+width: 44px;
+height: 44px;
+border-radius: 22px;
+border: 3px solid #111111;
+background: #E4780C;
+place-items: center;
+
+
+}
+.Qa_box-head-text{
+ text-align: left;
+font-weight: 700;
+font-style: Bold;
+font-size: 14px;
+letter-spacing: 8%;
+
+
+}
+.Qa_body{
+    text-align: left;
+   padding: 10px 17px 20px 15px;
+   display: none;
+   
+
+}
+.Qa_box-a{
+    
+    gap: 8px;
+    display: flex;
+    align-items: center;
+
+}
+.Qa_box-A-icon{
+     flex-shrink: 0;
+    width: 44px;
+height: 44px;
+border-radius: 22px;
+border: 3px solid #111111;
+background: #F0D320;
+place-items: center;
+display: grid;
+
+}
+.Qa_box-A-text{
+   
+    padding-top: 8px;
+display: block;
+font-family: Noto Sans JP;
+font-weight: 700;
+font-style: Bold;
+font-size: 14px;
+line-height: 170%;
+letter-spacing: 8%;
+ flex-grow: 1;
+
+
+}
+
 

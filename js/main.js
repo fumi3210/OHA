@@ -57,6 +57,25 @@ $(".drawer_content-link").on("click", function() {
   $(".drawer_icon").removeClass("is-checked");
   $(".drawer_content").removeClass("is-checked");
 });
+// QA
+  document.addEventListener("DOMContentLoaded", () => {
+    // 全てのQ&Aヘッダーを取得
+    const qaHeads = document.querySelectorAll(".Qa_box-head");
+
+    qaHeads.forEach((head) => {
+      head.addEventListener("click", () => {
+        const box = head.parentElement; // Qa_box
+
+        // もし「複数開ける」場合はこの行をコメントアウト
+        document.querySelectorAll(".Qa_box").forEach((b) => {
+          if (b !== box) b.classList.remove("is-open");
+        });
+
+        // 開閉切り替え
+        box.classList.toggle("is-open");
+      });
+    });
+  });
 
 
 

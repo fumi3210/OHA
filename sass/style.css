@@ -737,7 +737,6 @@ html, body {
     font-weight: 400;
     font-style: Regular;
     font-size: 16px;
-    leading-trim: NONE;
     line-height: 100%;
     letter-spacing: 8%;
     text-align: center;
@@ -996,7 +995,7 @@ html, body {
 }
 @media screen and (min-width: 768px) {
   .Merit_box-img img {
-    width: 38.0434782609%;
+    width: 262.8571428571%;
   }
 }
 
