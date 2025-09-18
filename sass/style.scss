@@ -394,7 +394,7 @@ text-align: center;
 
 }
 .News_head{
-    font-family: Montserrat;
+font-family: Montserrat;
 font-weight: 700;
 font-style: Bold;
 text-align: center;
@@ -1840,5 +1840,126 @@ letter-spacing: 8%;
 
 
 }
+// swiper
+.gallery{
+    padding: 60px 0 60px ;
+    @include mq(pc) {
+        padding: 100px 0 100px ;
+    }
+
+}
+.gallery_inner{
+    @include mq(pc) {
+        max-width: calc(800px + 30px * 2);
+        padding-left: 30px;
+        padding-right: 30px;
+        margin: 0 auto;
+    }
+
+}
+.gallery_heading{
+    text-align: center;
+
+}
+.gallery_head{
+font-weight: 700;
+font-style: Bold;
+font-size: 38px;
+line-height: 100%;
+letter-spacing: 10%;
+
+
+}
+.gallery_text{
+
+}
+.gallery-slide{
+    margin-top: 30px;
+
+}
+.gallery-swiper{
+padding-bottom: 26px;
+
+}
+.gallaery_card{
+    border-radius: 20px;
+    border: 3px solid #111111;
+    background: #ffff;
+    box-shadow: #F4F4F4;
+    padding:  15px 15px 12px 15px;
+    @include mq(pc) {
+        border-radius: 30px;
+        padding: 20px 1¥20px 10px 18px;
+    }
+
+}
+.gallery_img{
+    text-align: center;
+    img{
+        border-radius: 10px ;
+        @include mq(pc) {
+            border-radius: 20px;
+        }
+
+    }
+}
+.gallery_text{
+    margin-top: 11px;
+    text-align: center;
+    font-size: 14px;
+    @include mq(pc) {
+        font-size: 16px;
+        margin-top: 18px;
+    }
+
+}
+
+.gallery_pagination{
+display: flex;
+    justify-content: center;
+    gap: 12px;
+    bottom:0 ;
+.swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    background: #bcbcbc;
+    opacity: 1;
+    }
+.swiper-pagination-bullet-active{
+    background: #F0D320;
+
+
+}
+
+
+}
+// SCSS
+.gallery__prev {
+    
+    
+    // デフォルトのアイコンを非表示にする（あなたのコードでは既に実施済みだが、!importantを追加すると確実）
+    &::after {
+        display: none !important; 
+    }
+}
+
+.gallery__next {
+    
+    
+}
+.swiper-button-prev{
+
+
+    
+
+}
+.swiper-button-next{
+
+    
+}
+
+
+
 
 
