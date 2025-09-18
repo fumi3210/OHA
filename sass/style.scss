@@ -1674,9 +1674,19 @@ padding-bottom: 0;
 // Qa
 .QA{
     padding: 60px 0 60px ;
+    @include mq(pc) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 
 }
 .Qa_inner{
+    @include mq(pc) {
+   max-width: calc(800px + 36px * 2);
+   margin: 0 auto;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
 
 }
 .Qa_heading{
@@ -1698,6 +1708,10 @@ font-size: 14px;
 line-height: 100%;
 letter-spacing: 8%;
 text-align: center;
+@include mq(pc) {
+    font-size: 16px;
+    line-height: 27px;
+}
 
 
 }
@@ -1706,18 +1720,20 @@ margin-top: 52px;
 display: flex;
 flex-direction: column;
 gap: 42px;
+@include mq(pc) {
+    margin-top: 74px;
+   
+}
 
 }
 .Qa_box{
 
 }
 .Qa-box{
+
 border-radius: 10px;
 border: 3px solid #111111;
 background: #FFFFFF;
-text-align: left;
-margin-left: 20px;
-margin-right: 20px;
 &.is-open{
 .Qa_body{
     display: block;
@@ -1737,6 +1753,9 @@ display: block;
 width: 100%;
 padding: 32px 40px 20px 15px ;
 position: relative;
+@include mq(pc) {
+    padding: 32px 80px 20px 20px ;
+}
 &::after{
     content: "";
     position: absolute;
@@ -1780,6 +1799,9 @@ letter-spacing: 8%;
     text-align: left;
    padding: 10px 17px 20px 15px;
    display: none;
+   @include mq(pc) {
+    padding: 0 36px 20px 20px  ;
+   }
    
 
 }
@@ -1812,6 +1834,9 @@ font-size: 14px;
 line-height: 170%;
 letter-spacing: 8%;
  flex-grow: 1;
+ @include mq(pc) {
+    font-size: 16px;
+ }
 
 
 }
