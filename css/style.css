@@ -61,6 +61,10 @@ html, body {
   letter-spacing: 3%;
   font-weight: bold;
   color: #111;
+  transition: color 0.3s;
+}
+.header_link:hover {
+  color: #E4780C;
 }
 
 .header_button {
@@ -70,6 +74,11 @@ html, body {
   padding: 10px 30px;
   background: white;
   font-weight: bold;
+  transition: color 0.3s;
+}
+.header_button:hover {
+  background: #F0D320;
+  color: #111;
 }
 
 .drawer_icon {
@@ -252,6 +261,11 @@ html, body {
   text-align: center;
   border-radius: 60px;
   padding: 10px 30px;
+  transition: color 0.3s;
+}
+.mv_button a:hover {
+  background: #F0D320;
+  color: #111;
 }
 
 .mv_img {
@@ -399,6 +413,10 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  transition: color 0.3s;
+}
+.News_link:hover {
+  background: #F0D320;
 }
 @media screen and (min-width: 768px) {
   .News_link {
@@ -504,6 +522,10 @@ html, body {
   display: inline-block;
   border-bottom: 2px solid #111;
   padding-bottom: 8px;
+  transition: color 0.3s;
+}
+.News_more a:hover {
+  color: #F0D320;
 }
 
 .About {
@@ -623,6 +645,10 @@ html, body {
   border-radius: 60px;
   padding: 10px 30px;
   color: #111111;
+}
+.About_button a:hover {
+  background: #F0D320;
+  color: #111;
 }
 
 .Movie {
@@ -913,7 +939,6 @@ html, body {
     font-weight: 700;
     font-style: Bold;
     font-size: 16px;
-    leading-trim: NONE;
     line-height: 170%;
     letter-spacing: 3%;
     text-align: center;
@@ -1183,6 +1208,11 @@ tbody tr {
   border: solid 1px #111;
   padding: 10px 30px;
   border-radius: 60px;
+  transition: color 0.3s;
+}
+.cta_button a:hover {
+  background: #ECB815;
+  color: #111;
 }
 .contact {
   padding: 60px 0 60px;
@@ -1443,7 +1473,11 @@ tbody tr {
 }
 .form_check-box-text a {
   text-decoration: underline;
-  font-weight: inherit;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.form_check-box-text a:hover {
+  color: #F0D320;
 }
 
 .contact_button {
@@ -1460,6 +1494,10 @@ tbody tr {
   border: solid 2px #111;
   padding: 10px 42px;
   border-radius: 60px;
+}
+.contact_button a:hover {
+  background: #F0D320;
+  color: #111;
 }
 
 .footer_inner {
