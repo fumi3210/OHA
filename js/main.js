@@ -76,6 +76,7 @@ $(".drawer_content-link").on("click", function() {
       });
     });
   });
+  
 // swiper
 const swiper = new Swiper('.swiper', {
   // Optional parameters
